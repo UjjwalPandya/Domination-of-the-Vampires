@@ -763,7 +763,7 @@ class Board:
          for colorlist in player.snglist:
             if colorlist:
                ownssng = ["yes"]
-         if ownssng or player.boxlist or player.ftlist:                            #DOES THIS WORK?
+         if ownssng or player.boxlist or player.ftlist:                            
             mortwhile = 0
             print("Do you want to clear evidence of your previous obstacle?")
             while mortwhile == 0:
@@ -785,6 +785,7 @@ class Board:
                   print("Would you like to clear evidence of some additional obstacles?")
                else:
                   print("Invalid input. Available answers are Y (yes) or N (no).") 
+                  
 def main():
    print('WELCOME TO "DOMINATION OF THE VAMPIRES"')
    print('Rules of the game: \n 1.	The objective of the game is to kill all the vampires by making their experience = 0 xp. \n 2.	Silas is the “God of Traps” who is going to allow you create obstacles by using your experience. \n 3.	You will be assisted by your old friends on friend space which might get you earn more xps. \n 4.	It is up to you, how you deal with fighters, boxers, and police. \n 5.	If the vampires move ahead of you, they might have set trap for you. \n 6.	Opportunities are set by Silas which might get you earn or lose xps. \n 7.	You can get out of Jail by... \n a)	Escaping the Jail: Throwing doubles on any of your next three turns, if you succeed in doing this you immediately move forward the number of spaces shown by your doubles throw. Even though you had thrown doubles, you do not take another turn. \n b)	Help of Silas: Using the "Get Out of Jail Free Card" \n c)	Risking your life to vampires: Purchasing the "Get Out of Jail Free Card" from another player and playing it. \n d)	Bribing the officer: Paying 50 xp before you roll the dice on either of your next two turns. If you do not throw doubles by your third turn, you must pay the 50 xp fine. You then get out of Jail and immediately move forward the number of spaces shown by your throw. \n 8.	No man’s land is just a resting place. \n 9.	If you clear the evidence, you will get half the xps back from Silas which you spent on the obstacles.')
