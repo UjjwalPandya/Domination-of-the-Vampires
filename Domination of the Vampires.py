@@ -1,15 +1,18 @@
 import random
 
+
 class SPACE:
    def __init__(self):
       type = space
 
+      
 """
 co = Create Obstacle
 ce = Clear Evidence
 oc = Obstacle Creator
 xp = Experience
 """
+
 class Snag(SPACE):
    def __init__(self,name,stype,co,cost,obstaclecost,ce,price,o1,o2,o3,o4,o5,oc,color,obstacles):
       self.name = name
@@ -28,6 +31,7 @@ class Snag(SPACE):
       self.o5 = int(o5)
       self.obstacles = int(obstacles)
 
+      
 class Boxers(SPACE):
    def __init__(self,name,stype,co,oc):
       self.name = name
@@ -41,6 +45,7 @@ class Boxers(SPACE):
       self.bx4 = float(200)
       self.ce = float(100)
 
+      
 class Fighters(SPACE):
    def __init__(self,name,stype,co,oc):
       self.name = name
@@ -52,6 +57,7 @@ class Fighters(SPACE):
       self.f2 = float(10)
       self.ce = float(75)
 
+      
 class Policecheckspace(SPACE):
    def __init__(self,name,stype,co,pc):
       self.name = name
@@ -59,11 +65,13 @@ class Policecheckspace(SPACE):
       self.co = co
       self.pc = pc
 
+      
 class Freespace(SPACE):
    def __init__(self,name,stype,co):
       self.name = name
       self.stype = stype
       self.co = co
+      
       
 class Gotojailspace(SPACE):
    def __init__(self,name,stype,co):
@@ -71,18 +79,21 @@ class Gotojailspace(SPACE):
       self.stype = stype
       self.co = co
 
+      
 class Friendspace(SPACE):
    def __init__(self,name,stype,co):
       self.name = name
       self.stype = stype
       self.co = co
 
+      
 class Opportunityspace(SPACE):
    def __init__(self,name,stype,co):
       self.name = name
       self.stype = stype
       self.co = co
 
+      
 class FriendCard:
    def __init__(self,description,move,collect,pay,payperobstacle,getoutofjailfree,gotojail,collect50):
       self.description = description
@@ -94,6 +105,7 @@ class FriendCard:
       self.gotojail = gotojail
       self.collect50 = collect50
 
+      
 class OpportunityCard:
    def __init__(self,description,move,collect,pay,payperobstacle,getoutofjailfree,gotojail,moveback):
       self.description = description
@@ -105,6 +117,7 @@ class OpportunityCard:
       self.gotojail = gotojail
       self.moveback = moveback
 
+      
 class Player:
    def __init__(self,name,boardpos,xp,jailcards,jailtime,droll,piece,doublesacc,user):
       self.name = str(name)
@@ -181,9 +194,12 @@ class Player:
          if modsng.name == ft.name:
             ftlist.remove(ft)
 
+            
+            
 """
 All the Characters and Names are from the fictional TV Series 'The Vampire Diaries'
 """            
+
 class Board:
    def __init__(self,players,playerpiece):
       self.playerlist = []
