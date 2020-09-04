@@ -434,13 +434,13 @@ class Board:
                break
          print(player.name + " has landed on " + currspace.name + ".")
          if isinstance(currspace,Snag):
-            if currspace.oc == "Silas":                           # if creatable
-               if player.user == 0:                                 # if computer
+            if currspace.oc == "Silas":                           
+               if player.user == 0:                                 
                   for colorlist in player.snglist:
                      for sng in colorlist:
-                        if isinstance(sng,str):             #just added
-                           continue                          #just added
-                        if isinstance(sng,Snag):        #just added
+                        if isinstance(sng,str):             
+                           continue                        
+                        if isinstance(sng,Snag):        
                            if sng.color == currspace.color:           # PROBLEM, sng.color is appearently a string...
                               if player.xp >= currspace.cost:
                                  player.addsnag(currspace)
@@ -453,7 +453,7 @@ class Board:
                            player.addsnag(currspace)
                            print(str(player.name) + " has created " + str(currspace.name) + " for " + str(currspace.cost) + "xp.")
                if player.user == 1:
-                  if player.xp >= currspace.cost:                 # if user
+                  if player.xp >= currspace.cost:                 
                      createwhile = 0
                      while createwhile == 0:
                         choice = input("NOBODY CHANGED " + str(currspace.name) + ". WOULD YOU LIKE TO CREATE AN OBSTACLE HERE? TYPE Y OR N.")
@@ -464,7 +464,7 @@ class Board:
                            print("You have created an obstacle in " + str(currspace.name) + " for " + str(currspace.cost) + "xp.")
                            createwhile = 1
                         else:
-                           print("Invalid input. Available answers are Y (yes) or N (no).")   #PROBLEM
+                           print("Invalid input. Available answers are Y (yes) or N (no).")   
                   else:
                      print("YOU DON'T HAVE ENOUGH EXPERIENCE TO CREATE OBSTACLE ON THIS PROPERTY. TRY AGAIN LATER")
             elif currspace.oc == player.name:
@@ -562,7 +562,7 @@ class Board:
          if isinstance(currspace,Fighters):
             if currspace.oc == "Silas":                           # if creatable
                if player.xp >= currspace.cost:
-                  if player.user == 0:                                 # if computer
+                  if player.user == 0:                                 
                      if len(player.ftlist) >= 1:
                         player.addsnag(currspace)
                         print(player.name + " has created obstacles at " + currspace.name + " for " + str(currspace.cost) + "xp.")
@@ -645,7 +645,7 @@ class Board:
                         i.playerlose()
                         print(i.name + " has insufficient experience to pay 50 xp, and loses the game.")
          if isinstance(currspace,Opportunityspace):
-            self.opportunitylist.append(self.opportunitylist.pop(0))    # should move top card to bottom of deck
+            self.opportunitylist.append(self.opportunitylist.pop(0))   
             card = self.opportunitylist[-1]
             print("Opportunity!" + str(player.name) + "'s card says: " + str(card.description))
             if card.move > 0:
