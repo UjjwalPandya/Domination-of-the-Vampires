@@ -5,7 +5,9 @@ About the game:
 “Domination of the Vampires” is a simple board game in which you will be the “Hunter” who is on a mission to kill the Vampires with the help of the God of Traps, “Silas”.
 
 
+
 Rules of the game:
+
 1.	The objective of the game is to kill all the vampires by making their experience = 0 xp.
 2.	Silas is the “God of Traps” who is going to allow you to create obstacles by using your experience.
 3.	You will be assisted by your old friends on friend space which might get you to earn more xps.
@@ -21,10 +23,15 @@ d)	Bribing the officer: Paying 50 xp before you roll the dice on either of your 
 9.	If you clear the evidence, you will get half the xps back from Silas which you spent on the obstacles.
 
 
+
 Summary:
+
 We were instructed to ideate an original board game with proper logic and functioning. We had help from the instructor throughout the project which helped a lot through the process. To make the game I used the usual approach of first decomposing the problem and then going ahead solving them, which made the problem much more approachable. After decomposing the problem, I researched the packages that I can use and then realized that I do not need any packages, so I went ahead to write the code.
  
+ 
+ 
 Decomposition of Problem:
+
 1.	Complete the ideation and conceptualising of your game.
 2.	Create a rough plan for your game by analysing the concept.
 3.	Define how your game is going to work.
@@ -35,11 +42,15 @@ Decomposition of Problem:
 8.	Properly arrange your code so that it works.
 
 
+
 Pattern Recognition:
+
 After properly studying all the decomposed problems and the logic of the game I realized that the logics in my game are repetitive, like every time questions with similar answers have been asked. This logic has been repeated in every question.
 
 
+
 Algorithm:
+
 1.	First called the random and sys function to serve the purpose.
 2.	Created a class called ‘Snag’ to create obstacles at relevant places.
 3.	Defined other useful classes which are required for each space(title).
@@ -50,14 +61,21 @@ Algorithm:
 8.	Defined ‘main’ function to direct the flow of the game with welcome message, rules, selection of opponents and playing the game.
 
 
+
 Abstraction:
+
 We do not have to concentrate on the broad concept of the game as it can make us confused. We just need to follow the decomposition of the game that we have done, i.e., focus on smaller sub problems and solving them in sequence as they are based on the main logic of the game which has been derived from the concept of the game.
  
+ 
+ 
 Code design:
+
 The code has been designed in a very basic manner and is easy to understand, every process is clearly explained and performed, every part of the code is interconnected to each other. And the user defined functions have been named such that their function can be understood just by looking at the name.
 
 
+
 Logics:
+
 1.	A random character from the list will be selected based on the user’s input.
 2.	It will ask every time to create obstacle at the relevant places after each move.
 3.	If already created an obstacle, it will ask every time to clear the evidence and return half the original value of the obstacle before each move.
