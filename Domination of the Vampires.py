@@ -821,4 +821,5 @@ def main():
          gameboard.playermove(player,int(die1+die2),0)
          print(" ")
          print(" ")
+         
 main()  
